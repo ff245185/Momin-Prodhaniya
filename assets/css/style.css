@@ -6,7 +6,10 @@
  * copyright 2022 codewithsadee
  */
 
-
+.greenman{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+}
 
 
 
@@ -198,7 +201,11 @@ body.nav-active { overflow: hidden; }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 16px; }
+.container { padding-inline: 16px; 
+display: grid;
+grid-template-columns: repeat(2, 1hr);
+
+}
 
 .hover-1,
 .hover-2 { transition: var(--transition-1); }
