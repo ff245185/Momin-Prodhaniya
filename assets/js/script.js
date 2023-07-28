@@ -86,6 +86,14 @@ const slideNext = function () {
 
 sliderNextBtn.addEventListener("click", slideNext);
 
+
+
+window.onload=function(){
+  document.getElementById("autoplay").play();
+}
+
+
+
 /**
  * PREVIOUS SLIDE
  */
