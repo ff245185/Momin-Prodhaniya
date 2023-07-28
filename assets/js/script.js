@@ -89,10 +89,18 @@ sliderNextBtn.addEventListener("click", slideNext);
 
 
 window.onload=function(){
-  document.getElementById("autoplay").play();
+  document.getElementById("bgAudio").play();
 }
 
 
+var loaderone = document.getElementById("loaderone");
+window.addEventListener("load", function(){
+  loaderone.style.display = "none"
+})
+
+// window.onload = function() {
+//   var context = new AudioContext();
+// }
 
 /**
  * PREVIOUS SLIDE
@@ -107,6 +115,27 @@ const slidePrev = function () {
 
   moveSliderItem();
 }
+
+
+
+// auto play Audio
+
+// const bgAudio = document.getElementById('bgAudio');
+// const content = document.querySelector('.content');
+
+// content.addEventListener('click', () => {
+//   if (!bgAudio.paused) {
+//     bgAudio.pause();
+//   } else {
+//     bgAudio.play();
+//   }
+// });
+
+
+
+
+
+
 
 sliderPrevBtn.addEventListener("click", slidePrev);
 
